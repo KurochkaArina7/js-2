@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Пример работы с пользователем</title>
+    </head>
+     <body>
+        Введите слово.<br>
+        <script>
+            a=window.prompt("Напишите цвет гриба: ").toLowerCase();
+            b=window.prompt("Есть ли юбка?").toLowerCase();
+            switch (true) {
+            case a == 'белый' && b == 'нет':
+            window.alert('вы нашли белый гриб');
+            break;
+            case a == 'красный' && b == 'есть':
+            window.alert('а не мухомор ли это');
+            break;
+            case a == 'красный' && b == 'нет':
+            window.alert('может это подосиновик');
+            break;
+            case a == 'белый' && b == 'да':
+            window.alert('скорее всего это белая поганка');
+            break;
+            case a == 'коричневый' && b == 'нет':
+            window.alert('может это боровик');
+            break;
+            case a == 'желтый' && b == 'нет':
+            window.alert('наверное, это сыроежка');
+            break;
+            default:
+            window.alert('с грибами надо быть внимательными или попробуйте ввести другое значение');
+        }
+        </script>
+     </body>
+</html>

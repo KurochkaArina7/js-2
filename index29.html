@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Пример работы с пользователем</title>
+    </head>
+     <body>
+        Введите слово.<br>
+        <script>
+            a=window.prompt("Введите число любого месяца a: ");
+            switch (a) {
+                case "1":
+                case "2":
+                case "12":
+                window.alert('зима');
+                break;
+                case "3":
+                case "4":
+                case "5":
+                window.alert('весна');
+                break;
+                case "6":
+                case "7":
+                case "8":
+                window.alert('лето');
+                break;
+                case "9":
+                case "10":
+                case "11":
+                window.alert('осень');
+                break;
+                default:
+                window.alert('Попробуйте ввести другое значение или неверный формат');
+            }
+        </script>
+     </body>
+</html>
